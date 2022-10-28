@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Alwer939</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="/Contacto/css/estiloregistro.css" type="text/css" title="estilos del formulario" media="screen,print q">
+    <script src="validar.js"></script>
+
+    <title>ENviar correo</title>
+
+</head>
+<body>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="../index.html">Store</a>
+        <a class="navegacion__enlace" href="../Alwer939.html">Acerca de Alwer939</a>
+        <a class="navegacion__enlace" href="/Contacto/registro.html">Contacto</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="/Contacto/correo.html">Enviar correo</a>
+    </nav>
+
+    <main class="contenedor">
+        <form action="correo.php" method="post" class="form-register" onsubmit="validar()">
+            <h2 class="form_titulo">Enviar correo</h2>
+            <div class="contenedor-inputs">
+                <input type="email" id="correo" name="correo" placeholder="Email" class="input-100" required>
+                <textarea name="comentario" rows="10" cols="40" class="input-500" placeholder="Escribe aquí tus comentarios"></textarea>
+                <input name="boton" type="submit" value="Registrar" class="btn-enviar">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Alwer939 Store - Todos los derechos Reservados para Alwer939 2022.</p>
+    </footer>
+</body>
+</html>
