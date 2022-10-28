@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra del producto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="/js/producto.js"></script>
+</head>
+<body onload="pr()">
+    <header class="header">
+        <a\><img class="header__logo" src="img/Fondo_Alwer939.jpg" alt="Logotipo"></a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Store</a>
+        <a class="navegacion__enlace" href="Alwer939.html">Acerca de Alwer939</a>
+        <a class="navegacion__enlace" href="/Contacto/registro.html">Contacto</a>
+        <a class="navegacion__enlace" href="/Contacto/correo.html">Enviar correo</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1 id="titulo"></h1>
+
+        <div class="camisa">
+            <img id="img" class="camisa__imagen">
+
+            <div class="camisa__contenido">
+                <p id="info"></p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar Talla --</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input onclick="agregado()" class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Alwer939 Store - Todos los derechos Reservados para Alwer939 2022.</p>
+    </footer>
+</body>
+</html>
